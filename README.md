@@ -41,5 +41,5 @@ Set up your nick (it will be placed into cookie) and chat with other users in sa
 Separate user session can be simulated by separate web browser instances connecting to 127.0.0.1:8000.<br>
 <br>
 <p align=center>
-<img src="docs/example.png" alt="example" width="50%"/>
+<img src="docs/example.png" alt="example" width="80%"/>
 </p>
