@@ -59,7 +59,7 @@
                 var data = JSON.parse(event.data);
                 var sender = data['sender'];
                 if (sender == current_user)
-                    sender = "You wrote:";
+                    sender = "You:";
                 var message = data['message']
                 var content = "<p><strong>" + sender + " </strong> <span> " + message + "</span></p>";
                 parent.append(content);
