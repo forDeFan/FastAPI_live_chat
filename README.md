@@ -38,7 +38,7 @@ Docs available at<br>http://127.0.0.1:8000/docs
 
 Go to: http://127.0.0.1:8000 <br>
 Set up your nick (it will be placed into cookie) and chat with other users in same room.<br>
-Separate user session can be simulated by separet web browser instances.<br>
+Separate user session can be simulated by separate web browser instances connecting to 127.0.0.1:8000.<br>
 <br>
 <p align=center>
 <img src="docs/example.png" alt="example" width="50%"/>
