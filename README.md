@@ -1,9 +1,7 @@
 <h1>FastAPI websocket chat room</h1>
 
-Simple chat room for multiple users - build with FastAPI and websockets.
-Multiple users can chat in one room (separate web browser instances).<br>
-
-Case study of socket realtime connection usage.<br>
+Dockerized FastAPI chat room - build with websockets.<br>
+Multiple users can chat in same room (separate web browser instances) with live content update by websocket connection.<br>
 
 JQuery (for testing) on front side, will be replaced by Vue3 shortly.
 
@@ -17,13 +15,19 @@ $ git clone https://github.com/forDeFan/FastAPI_live_chat.git
 $ cd FastAPI_live_chat
 ```
 
+### To run with docker
+
+```
+$ docker-compose up -d
+```
+
+### To run locally without docker
+
 Recommended - create virtual environment and install dependencies
 
 ```
 pip install -r requirements.txt
 ```
-
-## To run the app
 
 While in project root
 
