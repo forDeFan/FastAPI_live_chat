@@ -1,0 +1,16 @@
+version: "3.3"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: build/Dockerfile.api
+    networks:
+      - chat_network
+    ports:
+      - 8000:8000
+  
+networks:
+  chat_network:
+    name: chat_network
+    driver: bridge

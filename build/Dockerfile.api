@@ -1,0 +1,18 @@
+FROM python:3.12-rc-slim-buster
+
+ENV WORKDIR=/app
+ENV USER=app
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+
+WORKDIR $WORKDIR
+
+RUN pip install --upgrade pip
+COPY . $WORKDIR
+RUN pip install -r build/requirements.txt
+
+RUN adduser --system --group $USER --disabled-password --no-create-home
+
+RUN chown -R $USER:$USER $WORKDIR
+USER $USER
+
+ENTRYPOINT ["sh", "build/start.sh"]
