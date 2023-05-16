@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 
-from .routers.chat_router import chat_router
-from .routers.home_router import home_router
-from .routers.socket_router import socket_router
-from .routers.user_router import user_router
+from app.backend.routers.chat_router import chat_router
+from app.backend.routers.home_router import home_router
+from app.backend.routers.socket_router import socket_router
+from app.backend.routers.user_router import user_router
 
 
 def include_router(app: FastAPI) -> None:

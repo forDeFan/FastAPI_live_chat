@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Request, Response
 from unidecode import unidecode
 
-from ..utils.user_validator import UserValidator
+from app.backend.utils.user_validator import UserValidator
 
 user_router = APIRouter()
 
