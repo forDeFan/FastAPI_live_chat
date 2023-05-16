@@ -20,7 +20,7 @@ class SocketManager:
         """Disconnect client from websocket."""
         self.active_connections.remove((websocket, user))
 
-    async def broadcast(self, data: dict[str]) -> dict[str]:
+    async def broadcast(self, data: dict) -> dict:
         """Bidirectional communication in active connection state."""
         for connection in self.active_connections:
             await connection[0].send_json(data)
